@@ -1,0 +1,15 @@
+/*
+Theme Name: Social State
+Theme URI:
+Description: Socail State Wordpress Template
+Version: 1.0
+Author: reyaleonar@gmail.com
+Author URI: reyaleonar@gmail.com
+*/
+body {
+    background-color: #fdffd8 !important;
+}
+
+@import './common/responsive.scss';
+@import './_bootstrap.scss';
+@import './landingpage/landingpage.scss';

@@ -1,2 +1,2 @@
 # rilate-template
-wordpress timplate
+wordpress template

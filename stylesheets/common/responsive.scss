@@ -1,0 +1,14 @@
+$break-small: 320px;
+$break-tab-max: 768px;
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-tab-max) { @content; }
+  } @else {
+    @media screen and (min-width:$media) {@content;}
+  }
+  
+}

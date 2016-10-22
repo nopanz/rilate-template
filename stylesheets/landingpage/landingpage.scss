@@ -1,0 +1,60 @@
+.landing-page {
+    margin: auto;
+    @include respond-to(medium-screens) {
+       width: 80%;
+    }
+    @include respond-to(handhelds) {
+        width: 90%;
+    }
+    .header {
+         margin: auto;
+        .logo-container {
+            margin: auto;
+            text-align: center;
+            margin-top: 150px;
+            @include respond-to(medium-screens) {
+                margin-top:50px;
+            }
+            @include respond-to(handhelds) {
+                margin-top:30px;
+            }
+            img {
+               width: 100%;
+               max-width: 663px;
+            }
+        }
+    }
+    .content {
+        margin-top: 100px;
+        padding-bottom: 100px;
+        @include respond-to(handhelds) {
+            margin-top: 30px;
+        }
+         @include respond-to(medium-screens) {
+            margin-top: 50px;
+        }
+        .profile-detail {
+            @include respond-to(medium-screens) {
+                 text-align: center;
+                 margin-top: 30px;
+            }
+            @include respond-to(handhelds) {
+                 text-align: center;
+                 margin-top: 20px;
+            }
+            .email,
+            .title {
+               font-weight: bold;
+            }
+            ul {
+                 padding-left: 0px;
+                 margin-top: 30px;
+                li {
+                    display: block;
+                    padding: 5px 0px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

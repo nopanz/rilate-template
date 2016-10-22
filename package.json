@@ -1,0 +1,25 @@
+{
+  "name": "social-template",
+  "version": "1.0.0",
+  "description": "wordpress template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss stylesheets/main.scss style.css",
+    "watch-scss":"nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nopanz/rilate-template.git"
+  },
+  "author": "reyaleonar@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nopanz/rilate-template/issues"
+  },
+  "homepage": "https://github.com/nopanz/rilate-template#readme",
+  "devDependencies": {
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.11.0"
+  }
+}
